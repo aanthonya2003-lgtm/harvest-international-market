@@ -1,0 +1,24 @@
+# Harvest International Market
+
+> An authentic Middle Eastern grocery store and Mediterranean kitchen located at 733 E Main St, El Cajon, CA 92020. We offer fresh world-sourced produce, Zabihah-certified halal butcher, brick-oven Iraqi breads, a full Mediterranean kitchen (kabobs, shawarma, falafel, lamb shank), bakery, deli, and full-service catering across San Diego County. Phone (619) 442-0413. Open daily 7AM–10PM.
+
+## Locations
+
+- [El Cajon (Original)](https://harvestinternational.com/about): 733 E Main St, El Cajon, CA 92020. Focus on Middle Eastern cuisine.
+- [Balboa (San Diego)](https://harvestinternational.com/about): Persian and Eastern European specialties.
+
+## Order Online
+
+- [DoorDash](https://www.doordash.com/store/harvest-international-market-el-cajon-312309/403760/): Live kitchen delivery in El Cajon.
+- [Uber Eats](https://www.ubereats.com/store/harvest-international-market-and-kitchen-e-main-st/29d-fbe3Tw637HDe_a-ysQ): Most-liked items: Beef Shawarma Sandwich, Falafel Sandwich, Chicken Shawarma Sandwich.
+- [Grubhub](https://www.grubhub.com/restaurant/harvest-international-kitchen-733-e-main-st-el-cajon/335078): Available with Grubhub+ free delivery deals.
+
+## Pages
+
+- [Home](https://harvestinternational.com/): Overview of all departments, ordering options, and testimonials.
+- [Menu](https://harvestinternational.com/menu): Full kitchen menu (sandwiches, plates, salads, dips, bakery) and market departments.
+- [Order](https://harvestinternational.com/order): All three delivery platforms plus in-store pickup info.
+- [Catering](https://harvestinternational.com/catering): Tray and event packages from $29.99 to custom, full-service across San Diego.
+- [Weekly Ad](https://harvestinternational.com/weekly-ad): Rotating weekly specials and featured deals.
+- [About](https://harvestinternational.com/about): Company story, two-location model, values, halal commitment.
+- [Contact](https://harvestinternational.com/contact): Phone, address, hours, form, and map embed.
