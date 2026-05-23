@@ -53,8 +53,8 @@ export default function AboutPage() {
             <div className="lg:col-span-6">
               <div className="relative aspect-[4/5] overflow-hidden rounded-sm">
                 <Image
-                  src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1600&q=88"
-                  alt="Brick oven tannour bread baking at Harvest International Market"
+                  src="https://harvestinternationalmarket.com/wp-content/uploads/2015/06/BrickOvenBreads.jpg"
+                  alt="Flatbreads baking inside the Harvest brick oven with visible flame"
                   fill
                   sizes="(max-width: 1024px) 100vw, 50vw"
                   className="object-cover"

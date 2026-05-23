@@ -7,6 +7,7 @@ import { gsap } from "gsap";
 import SplitType from "split-type";
 import { Magnetic } from "./magnetic-button";
 import { site } from "@/lib/site";
+import { heroPhoto } from "@/lib/photos";
 
 export function Hero() {
   const root = useRef<HTMLElement>(null);
@@ -107,19 +108,20 @@ export function Hero() {
       ref={root}
       className="relative min-h-[100dvh] w-full overflow-hidden hero-radial"
     >
-      {/* Background image with Ken Burns */}
+      {/* Background image with Ken Burns — official Harvest authentic-grocery
+          aisle (verified subject) treated with heavy gradients for souk mood */}
       <div ref={bgImg} className="absolute inset-0 will-change-transform">
         <Image
-          src="https://images.unsplash.com/photo-1583394293214-28ded15ee548?auto=format&fit=crop&w=2400&q=90"
-          alt="Vibrant Middle Eastern market display with fresh spices, dates, and produce"
+          src={heroPhoto}
+          alt="Aisles of imported authentic grocery brands at Harvest International Market"
           fill
           priority
           sizes="100vw"
           className="object-cover"
         />
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-bg)]/85 via-[var(--color-bg)]/65 to-[var(--color-bg)]" />
-        <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-bg)]/80 via-transparent to-transparent" />
+        {/* Layered overlays: warm dark wash + saffron vignette */}
+        <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-bg)]/92 via-[var(--color-bg)]/75 to-[var(--color-bg)]" />
+        <div className="absolute inset-0 bg-gradient-to-r from-[var(--color-bg)]/90 via-[var(--color-bg)]/30 to-[var(--color-bg)]/70" />
       </div>
 
       {/* Spice motes (floating particles) */}

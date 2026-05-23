@@ -148,8 +148,8 @@ export default function CateringPage() {
         <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
           <div className="relative aspect-[21/9] overflow-hidden rounded-sm">
             <Image
-              src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=2400&q=88"
-              alt="Catering spread featuring kabobs, rice, salads and Middle Eastern dishes"
+              src="https://harvestinternationalmarket.com/wp-content/uploads/2015/06/Catering_New.jpg"
+              alt="Harvest International catering spread with fresh fruits, sweets and carved watermelon centerpiece"
               fill
               sizes="100vw"
               className="object-cover"

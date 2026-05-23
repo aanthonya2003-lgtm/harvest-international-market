@@ -63,7 +63,7 @@ export function StorySection() {
   return (
     <section
       ref={root}
-      className="relative py-28 lg:py-40 bg-[var(--color-bg)] overflow-hidden"
+      className="relative pt-24 lg:pt-32 pb-16 lg:pb-24 bg-[var(--color-bg)] overflow-hidden"
     >
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
         <div className="grid lg:grid-cols-12 gap-12 lg:gap-20 items-center">
@@ -71,8 +71,8 @@ export function StorySection() {
           <div className="lg:col-span-6 lg:order-2">
             <div className="story-img-wrap relative aspect-[4/5] overflow-hidden rounded-sm">
               <Image
-                src="https://images.unsplash.com/photo-1601050690597-df0568f70950?auto=format&fit=crop&w=1600&q=88"
-                alt="Fresh tannour flatbread being pulled from a traditional brick oven"
+                src="https://harvestinternationalmarket.com/wp-content/uploads/2015/06/BrickOvenBreads.jpg"
+                alt="Authentic flatbreads baking inside the Harvest brick oven with visible flame"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="story-img object-cover scale-110"

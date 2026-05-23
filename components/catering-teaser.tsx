@@ -59,12 +59,12 @@ export function CateringTeaser() {
   return (
     <section
       ref={root}
-      className="relative py-28 lg:py-40 overflow-hidden bg-[var(--color-bg-elev)]"
+      className="relative py-24 lg:py-32 overflow-hidden bg-[var(--color-bg-elev)]"
     >
       {/* BG photo at low opacity */}
       <div className="absolute inset-0 opacity-[0.12]">
         <Image
-          src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=2400&q=85"
+          src="https://harvestinternationalmarket.com/wp-content/uploads/2015/06/Catering_New.jpg"
           alt=""
           fill
           sizes="100vw"

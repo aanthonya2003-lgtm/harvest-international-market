@@ -153,6 +153,8 @@ export const kitchenMenu: MenuSection[] = [
   },
 ];
 
+import { officialPhotos } from "./photos";
+
 export interface GroceryDept {
   id: string;
   title: string;
@@ -162,15 +164,16 @@ export interface GroceryDept {
   highlights: string[];
 }
 
+// Department imagery sourced directly from the client's official photography
+// at harvestinternationalmarket.com — every image is the actual store, not stock.
 export const groceryDepartments: GroceryDept[] = [
   {
     id: "produce",
     title: "Fresh Produce",
     description:
       "World-sourced fruits and vegetables. Imported staples like Persian cucumbers, fresh dates, pomegranate, sumac, fresh herbs and seasonal Middle Eastern specialties.",
-    image:
-      "https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=1600&q=85",
-    alt: "Fresh produce display with peppers, tomatoes and herbs",
+    image: officialPhotos.produce,
+    alt: "Bell peppers, cucumbers and squash in the Harvest produce section",
     highlights: [
       "Persian cucumbers",
       "Fresh dates & figs",
@@ -183,9 +186,8 @@ export const groceryDepartments: GroceryDept[] = [
     title: "Halal Butcher",
     description:
       "Zabihah-certified halal butcher shop. Lamb, beef, chicken and goat cut to order daily by our in-house butcher team.",
-    image:
-      "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=1600&q=85",
-    alt: "Halal butcher counter with fresh cuts of meat",
+    image: officialPhotos.halalMeats,
+    alt: "Halal beef steaks grilling over open flame",
     highlights: [
       "Zabihah certified",
       "Cut daily",
@@ -198,9 +200,8 @@ export const groceryDepartments: GroceryDept[] = [
     title: "Authentic Grocery",
     description:
       "Pantry imports from across the Middle East, Persia, Eastern Europe and Russia. Brands you actually grew up with — not the supermarket substitutes.",
-    image:
-      "https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?auto=format&fit=crop&w=1600&q=85",
-    alt: "Shelves stocked with international pantry imports",
+    image: officialPhotos.authenticGrocery,
+    alt: "Aisles of imported basmati rice and pantry brands at Harvest International",
     highlights: [
       "Middle Eastern brands",
       "Persian imports",
@@ -213,9 +214,8 @@ export const groceryDepartments: GroceryDept[] = [
     title: "Brick Oven Breads",
     description:
       "Our in-house brick oven produces fresh tannour and traditional Iraqi flatbreads throughout the day. Watch them come out hot.",
-    image:
-      "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&w=1600&q=85",
-    alt: "Traditional Arabic flatbread baking in a brick oven",
+    image: officialPhotos.brickOvenBreads,
+    alt: "Flatbreads baking in the Harvest brick oven with visible flame",
     highlights: [
       "Tannour bread",
       "Iraqi flatbread",
@@ -228,9 +228,8 @@ export const groceryDepartments: GroceryDept[] = [
     title: "Bakery & Sweets",
     description:
       "Baklava, ma'amoul, qatayef, knafeh and traditional Mediterranean pastries. Hand-rolled by bakers who learned from their grandmothers.",
-    image:
-      "https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=1600&q=85",
-    alt: "Display of baklava and Middle Eastern pastries",
+    image: officialPhotos.bakery,
+    alt: "Trays of fresh pistachio baklava at the Harvest bakery counter",
     highlights: [
       "House-made baklava",
       "Hand-rolled pastries",
@@ -243,9 +242,8 @@ export const groceryDepartments: GroceryDept[] = [
     title: "Service Deli",
     description:
       "Cold case loaded with house salads, imported cheeses, cured meats, olives, and a self-serve hummus and dip bar.",
-    image:
-      "https://images.unsplash.com/photo-1505253758473-96b7015fcd40?auto=format&fit=crop&w=1600&q=85",
-    alt: "Mediterranean deli case with cheeses, olives and salads",
+    image: officialPhotos.serviceDeli,
+    alt: "Fresh house-made tabbouli salad at the Harvest deli counter",
     highlights: [
       "Self-serve olive bar",
       "Imported cheeses",

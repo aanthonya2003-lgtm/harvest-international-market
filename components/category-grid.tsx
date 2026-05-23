@@ -6,6 +6,7 @@ import Link from "next/link";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { motion } from "framer-motion";
+import { officialPhotos } from "@/lib/photos";
 
 if (typeof window !== "undefined") {
   gsap.registerPlugin(ScrollTrigger);
@@ -20,14 +21,16 @@ interface Category {
   accent: string;
 }
 
+// All eight department photos are sourced directly from the client's official
+// website (harvestinternationalmarket.com/wp-content/uploads/). Every image
+// shows the actual El Cajon store and the exact subject named on its card.
 const categories: Category[] = [
   {
     title: "Fresh Produce",
     description:
       "World-sourced fruits and vegetables — fresher and cheaper than any supermarket in El Cajon.",
-    image:
-      "https://images.unsplash.com/photo-1488459716781-31db52582fe9?auto=format&fit=crop&w=1200&q=85",
-    alt: "Vibrant fresh produce market display with peppers, tomatoes and herbs",
+    image: officialPhotos.produce,
+    alt: "Fresh bell peppers, cucumbers and squash in the Harvest produce section",
     href: "/menu#produce",
     accent: "saffron",
   },
@@ -35,9 +38,8 @@ const categories: Category[] = [
     title: "Halal Butcher",
     description:
       "Zabihah-certified daily cuts of lamb, beef, chicken and goat from our in-house butcher counter.",
-    image:
-      "https://images.unsplash.com/photo-1607623814075-e51df1bdc82f?auto=format&fit=crop&w=1200&q=85",
-    alt: "Halal butcher counter with fresh cuts of meat displayed",
+    image: officialPhotos.halalMeats,
+    alt: "Halal beef steaks grilling over open flame at Harvest International",
     href: "/menu#meats",
     accent: "pomegranate",
   },
@@ -45,9 +47,8 @@ const categories: Category[] = [
     title: "Mediterranean Kitchen",
     description:
       "Kabobs, shawarma, falafel, lamb shank and chicken tikka — cooked fresh every day.",
-    image:
-      "https://images.unsplash.com/photo-1633321088355-d0f81134ca3b?auto=format&fit=crop&w=1200&q=85",
-    alt: "Kabob and shawarma platter with rice and grilled vegetables",
+    image: officialPhotos.kitchen,
+    alt: "Beef shawarma sandwich wrapped in fresh pita with onions and tomato",
     href: "/menu#kitchen",
     accent: "saffron",
   },
@@ -55,9 +56,8 @@ const categories: Category[] = [
     title: "Brick Oven Breads",
     description:
       "Authentic tannour and Iraqi flatbreads pulled hot from our in-house brick oven.",
-    image:
-      "https://images.unsplash.com/photo-1586444248902-2f64eddc13df?auto=format&fit=crop&w=1200&q=85",
-    alt: "Traditional Arabic flatbread fresh from a brick oven",
+    image: officialPhotos.brickOvenBreads,
+    alt: "Lahmajun and tannour flatbreads baking in the Harvest brick oven",
     href: "/menu#breads",
     accent: "saffron",
   },
@@ -65,9 +65,8 @@ const categories: Category[] = [
     title: "Authentic Grocery",
     description:
       "Middle Eastern, Persian, Eastern European and Russian pantry staples you won't find elsewhere.",
-    image:
-      "https://images.unsplash.com/photo-1604335399105-a0c585fd81a1?auto=format&fit=crop&w=1200&q=85",
-    alt: "Middle Eastern grocery shelves stocked with spices, olives, and imports",
+    image: officialPhotos.authenticGrocery,
+    alt: "Aisles of imported basmati rice and authentic pantry brands at Harvest",
     href: "/menu#grocery",
     accent: "sage",
   },
@@ -75,9 +74,8 @@ const categories: Category[] = [
     title: "Bakery & Sweets",
     description:
       "Hand-rolled baklava, ma'amoul, qatayef and traditional Mediterranean pastries baked daily.",
-    image:
-      "https://images.unsplash.com/photo-1519676867240-f03562e64548?auto=format&fit=crop&w=1200&q=85",
-    alt: "Display of baklava and Middle Eastern pastries",
+    image: officialPhotos.bakery,
+    alt: "Trays of fresh pistachio baklava at the Harvest bakery counter",
     href: "/menu#bakery",
     accent: "pomegranate",
   },
@@ -85,9 +83,8 @@ const categories: Category[] = [
     title: "Service Deli",
     description:
       "Cold salads, imported cheeses, cured meats and a self-serve hummus and olive bar.",
-    image:
-      "https://images.unsplash.com/photo-1505253758473-96b7015fcd40?auto=format&fit=crop&w=1200&q=85",
-    alt: "Mediterranean deli with cheeses, olives and salads",
+    image: officialPhotos.serviceDeli,
+    alt: "Fresh house-made tabbouli with bell pepper at the Harvest deli",
     href: "/menu#deli",
     accent: "sage",
   },
@@ -95,9 +92,8 @@ const categories: Category[] = [
     title: "Full-Service Catering",
     description:
       "Wedding, corporate and event catering with set-up and delivery across San Diego.",
-    image:
-      "https://images.unsplash.com/photo-1555939594-58d7cb561ad1?auto=format&fit=crop&w=1200&q=85",
-    alt: "Catering platter with Middle Eastern foods arranged elegantly",
+    image: officialPhotos.catering,
+    alt: "Elaborate Harvest catering spread with carved watermelon centerpiece",
     href: "/catering",
     accent: "saffron",
   },
@@ -166,7 +162,7 @@ export function CategoryGrid() {
     <section
       ref={root}
       id="departments"
-      className="relative py-28 lg:py-40 bg-[var(--color-bg)]"
+      className="relative pt-20 lg:pt-28 pb-20 lg:pb-28 bg-[var(--color-bg)]"
     >
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
         <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 mb-16 lg:mb-20">
