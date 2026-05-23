@@ -31,7 +31,7 @@ export function MapSection() {
   }, []);
 
   return (
-    <section ref={root} className="relative py-28 lg:py-32 bg-[var(--color-bg)]">
+    <section ref={root} className="relative py-20 lg:py-28 bg-[var(--color-bg)]">
       <div className="mx-auto max-w-[1400px] px-6 lg:px-10">
         <div className="grid lg:grid-cols-12 gap-10 lg:gap-12 items-stretch">
           {/* Info */}

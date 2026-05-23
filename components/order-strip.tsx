@@ -52,7 +52,7 @@ export function OrderStrip() {
   return (
     <section
       ref={root}
-      className="relative py-28 lg:py-36 bg-[var(--color-bg)]"
+      className="relative pt-12 lg:pt-16 pb-24 lg:pb-32 bg-[var(--color-bg)]"
     >
       <div className="mx-auto max-w-[1100px] px-6 lg:px-10">
         <div className="text-center mb-14 lg:mb-16">
